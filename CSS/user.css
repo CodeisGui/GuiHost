@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3{
+    color: #333;
+}
+
+body{
+    background: url(https://raw.githubusercontent.com/CodeisGui/Guihost/main/wallpaper_minecraft_java_edition_1920x1080.png) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar */
+
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+    position: fixed;
+}
+
+nav	{
+position: relative;
+}
+
+.logo{
+width: 50px;
+margin-top: 15px;
+}
+
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ;
+}
+.navbar-items a:hover{
+    color: #ccc;
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover{
+    background-color: #1a8645;
+    color: #fff;
+}
+
+/* Login Form */
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container{
+    width: 420px;
+    border: 2px solid #232a31;
+    background: rgba(0, 0, 0, 0.4); /* fundo translúcido */
+    backdrop-filter: blur(5px); /* aplica blur no que está atrás */
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 70px rgba(44,199,106,0.7);
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Form */
+
+.login{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.login input{
+    width: 100%;
+    border: 2px solid #1a8645;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    padding: 20px 45px 20px 20px;
+}
+.login input:focus{
+    border-color: #2cc76a;
+    outline: none;
+}
+
+.login input::placeholder{
+    color: #fff;
+    opacity: 0.9;
+}
+
+.login i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    
+}
+
+.login i:hover{
+    color: #2cc76a;
+    cursor: text;
+}
+
+.remember a{
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+
+.login-btn{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #1a8645;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.login-btn:hover{
+    box-shadow: 1px 1px 5px rgba(13,20,100,0.2);
+    background-color: #2cc76a;
+    color: #fff;
+}
+
+.register{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.register a{
+    color: #2cc76a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.register a>:hover{
+    color: #fff;
+}
+
+.social-login a{
+    display: inline-block;
+    padding-top: 15px;
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #232a31;
+    padding: 1rem;
+    
+}
+
+
+.footer-container p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-container ul{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-container li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-container a{
+    color: #2cc76a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footer-container a:hover{
+    color: #fff;
+}
+.footer-container .social-icons{
+    margin: 20px 0;
+} 
+
+    /* media queries */
+@media (max-width: 768px){
+    .navbar-items{
+        font-size: 14px;
+    }
+    .navbar-container{
+        padding: 0 1rem;
+    }
+    .main-banner h1{
+        padding: 15%;
+        font-size: 2.5rem;
+    }
+    .main-banner p{
+        font-size: 1.2rem;
+    }
+    .services-container ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .plans-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar-items{
+        font-size: 10px;
+    }
+    .main-banner h1{
+        padding: 42px;
+        font-size: 2rem;
+    }
+    .main-banner p{
+        font-size: 1rem;
+    }
+    .searchdomain-container input[type="text"]{
+        width: 80%;
+    }
+    .searchdomain-container input[type="submit"]{
+        width: 80%;
+    }
+    .contact-container input, .contact-container textarea{
+        width: 90%;
+    }
+    .login-container {
+        width: 90%;
+        padding: 20px;
+      }
+}

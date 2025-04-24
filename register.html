@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuiHost</title>
+    <link rel="stylesheet" href="CSS/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                <a href="#">
+                    <img class="logo" src="/hdchostlogo.png" alt="GuiHost">
+                </a>
+
+                <ul class="navbar-items">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Preços</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" class="default-btn">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <main>
+
+            <div class="login-container">
+                <h1>Registrar na Plataforma</h1>
+                <form>
+                    <div class="login">
+                        <input type="email" id="username" name="username" required placeholder="Digite seu e-mail">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="login">
+                        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="login">
+                        <input type="password" id="password" name="password" required placeholder="Confirme sua senha">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="remember">
+
+                        <button type="submit" class="login-btn">Criar conta</button>
+                    </div>
+                    <div class="register">
+                        <p>Já tem uma conta? <a href="login.html"> Fazer login  </a></p>
+                        <p>Ou entre com:</p>
+                        <div class="social-login">
+                            <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p> Todos os direitos reservados &copy; 2023 GuiHost.</p>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
