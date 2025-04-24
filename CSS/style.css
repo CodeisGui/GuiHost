@@ -69,7 +69,7 @@ margin-top: 15px;
 /* Main banner */
 
 .main-banner{
-    background-image: url ('/wallpaper_minecraft_java_edition_1920x1080.png');
+    background-image: url ('../wallpaper_minecraft_java_edition_1920x1080.png');
     padding: 12rem 0;
     background-size: cover;
     background-position: center;
